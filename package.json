@@ -5,12 +5,16 @@
   "main": "index.js",
   "dependencies": {
     "dotenv": "^6.0.0",
+    "expect": "^23.4.0",
     "express": "^4.16.3",
     "lodash": "^4.17.10",
-    "mongoose": "^5.2.4"
+    "mocha": "^5.2.0",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.4",
+    "regenerator-runtime": "^0.12.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --recursive \"./src/tests/*.js\"",
     "start": "node server.js"
   },
   "author": "",
